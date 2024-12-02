@@ -20,7 +20,7 @@ const SignUp = () => {
             const newUser = {name, email, createdAt}
 
             // save new user info to the database
-            fetch('http://localhost:5000/users',{
+            fetch('https://5th-coffee-store-server.vercel.app/users',{
                 method: 'POST',
                 headers:{
                     'content-type': 'application/json'
@@ -95,7 +95,7 @@ const SignUp = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Sign Up</button>
+              <button className="btn btn-primary">Sign Up or register</button>
             </div>
           </form>
         </div>
